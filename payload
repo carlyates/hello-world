@@ -3,5 +3,4 @@ require 'json'
 
 post '/payload' do
   push = JSON.parse(request.body.read)
-  puts request[“X-GitHub-Event”] # seeing if this works
 end
