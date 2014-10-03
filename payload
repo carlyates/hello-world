@@ -5,6 +5,6 @@ post '/payload' do
 
   push = JSON.parse(request.body.read)
   puts “The GitHub request type is:”
-  puts request[“X-GitHub-Event”] # seeing if this works.
+  puts request[“X-GitHub-Event”] # seeing if this works
 
 end
