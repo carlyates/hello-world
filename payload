@@ -3,6 +3,6 @@ require 'json'
 
 post '/payload' do
   push = JSON.parse(request.body.read)
-  puts "I got some JSON: #{push.inspect}" #its a mad, mad world but it continues on.
+  puts "I got some JSON: #{push.inspect}" #its a hard knocks life.
   puts "request type is: #{request.env["X-GitHub-Event"]}" #my confidence is waining?
 end
